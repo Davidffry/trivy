@@ -59,7 +59,7 @@ func Update(c *cli.Context) error {
 
 	pluginName := c.Args().First()
 	if err := plugin.Update(pluginName); err != nil {
-		return xerrors.Errorf("plugin uninstall error: %w", err)
+		return xerrors.Errorf("plugin update error: %w", err)
 	}
 
 	return nil
